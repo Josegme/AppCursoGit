@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="imorgage" onsubmit="return calculateMorgage(event)" method="get" target="_self"> 
+        <!--Formulario-->
+        <label for="fcuota" >Cuota Inicial</label>
+        <input type="text" name="" id="fcuota">
+
+        <label for="fvalortotal" >Valor Total</label>
+        <input type="text" name="" id="fvalortotal">
+
+        <label for="finteres" >Tasa de Interes</label>
+        <input type="text" name="" id="finteres">
+
+        <label for="fplazo" >Plazo en años</label>
+        <input type="text" name="" id="fplazo">
+        <!--Boton Submit-->
+        <button type="submit">Calcular</button>
+        <button onclick="resetForm()">Reiniciar Formulario</button>
+    </form>
+    <!--Resultado del calculo-->
+    <label for="omontoprestamo" >Monto Total del Prestamo</label>
+    <output id="omontoprestamo">0</output>
+
+    <label for="ocuotamensual" >Valor Cuota Mensual</label>
+    <output id="ocuotamensual">0</output>
+
+<script src="./js/morgage.js"></script>
+</body>
+</html>
