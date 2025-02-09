@@ -1,0 +1,17 @@
+Modificar la vista "detail.html" para incluir una tabla con la siguiente estructura:
+
+Definir dos filas, la primer fila seŕa para el encabezado de las columnas donde pondras los títulos de las columnas "Imágen" y "Detalle".
+
+En la segunda fila irá el contenido en dos columnas, en la primer columna ubicarás la imagen que ya existe y en la segunda columna ubicarás el enlace(link) que ya existe de "ir atrás"
+
+En esta misma vista podras añadir despeus de la tabla unno o varios parrafos con cualquier contenido de texto para que no se vea tan vacia la vista.
+
+En las vistas "controlGate.html y Geolocation.html" debes definir dos enlaces internos (links)  de ir al inicio, similar al que existe en la vista de "detail.html".
+
+En el fichero "globalStyle.css" debes crear una hoja de estilo para los elementos "button" donde defines un color de fondo para los botones, un tamaño de letra y un color del texto de los botones, los valores sugeridos son:
+
+Color de fondo: "cornflowerblue"
+
+Color del texto "white"
+
+Tamaño de letra "large".
