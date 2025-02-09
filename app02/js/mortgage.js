@@ -1,11 +1,11 @@
-function calculateMorgage(event){
+function calculateMortgage(event){
 
     event.preventDefault();
 
-    let cuota = document.forms["imorgage"]["fcuota"].value;
-    let costoTotal = document.forms["imorgage"]["fvalortotal"].value;
-    let intereses = document.forms["imorgage"]["finteres"].value;
-    let plazoAnios = document.forms["imorgage"]["fplazo"].value;
+    let cuota = document.forms["imortgage"]["fcuota"].value;
+    let costoTotal = document.forms["imortgage"]["fvalortotal"].value;
+    let intereses = document.forms["imortgage"]["finteres"].value;
+    let plazoAnios = document.forms["imortgage"]["fplazo"].value;
     const MONTHS_ON_YEAR = 12;
 
     const morgage = {
@@ -27,7 +27,7 @@ function outputMorgage(finalMorgage){
 }
 
 function resetForm(){
-    document.forms["imorgage"].reset();
+    document.forms["imortgage"].reset();
     
 }
 

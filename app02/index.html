@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <form action="" id="imorgage" onsubmit="return calculateMorgage(event)" method="get" target="_self"> 
-        <!--Formulario-->
-        <label for="fcuota" >Cuota Inicial</label>
-        <input type="text" name="" id="fcuota">
+    <link
+      href="./css/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="./css/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h1 class="text-primary text-uppercase">Calculo Hipotecario</h1>
+    <form
+      action=""
+      id="imortgage"
+      onsubmit="return calculateMortgage(event)"
+      method="get"
+      target="_self"
+    >
+      <!--Formulario-->
+      <div class="mb-3">
+        <label for="fcuota" class="fomr-label">Cuota Inicial</label>
+        <input type="text" name="" id="fcuota" class="form-control" />
 
-        <label for="fvalortotal" >Valor Total</label>
-        <input type="text" name="" id="fvalortotal">
+        <label for="fvalortotal" class="fomr-label">Valor Total</label>
+        <input type="text" name="" id="fvalortotal" class="form-control" />
+      </div>
+      <!--Interes-->
+      <div class="mb-3">
+        <label for="finteres" class="fomr-label">Tasa de Interes</label>
+        <input type="text" name="" id="finteres" class="form-control" />
 
-        <label for="finteres" >Tasa de Interes</label>
-        <input type="text" name="" id="finteres">
-
-        <label for="fplazo" >Plazo en años</label>
-        <input type="text" name="" id="fplazo">
-        <!--Boton Submit-->
+        <label for="fplazo" class="fomr-label">Plazo en años</label>
+        <input type="text" name="" id="fplazo" class="form-control" />
+      </div>
+      <!--Boton Submit-->
+      <div class="mb-3">
         <button type="submit">Calcular</button>
         <button onclick="resetForm()">Reiniciar Formulario</button>
+      </div>
     </form>
     <!--Resultado del calculo-->
-    <label for="omontoprestamo" >Monto Total del Prestamo</label>
-    <output id="omontoprestamo">0</output>
+    <div>
+      <label for="omontoprestamo">Monto Total del Prestamo</label>
+      <output id="omontoprestamo">0</output>
 
-    <label for="ocuotamensual" >Valor Cuota Mensual</label>
-    <output id="ocuotamensual">0</output>
+      <label for="ocuotamensual">Valor Cuota Mensual</label>
+      <output id="ocuotamensual">0</output>
 
-<script src="./js/morgage.js"></script>
-</body>
+      <script src="./js/mortgage.js"></script>
+    </div>
+  </body>
 </html>
