@@ -18,16 +18,23 @@ function calculateMortgage(event){
     morgage.totalIntereses =  morgage.totalPrestamo * intereses/100;
     morgage.cuotaMensual = (morgage.totalPrestamo + morgage.totalIntereses) / (plazoAnios * MONTHS_ON_YEAR);
 
-    outputMorgage(morgage);
+    outputMortgage(morgage);
 }
 
-function outputMorgage(finalMorgage){
-    document.getElementById("omontoprestamo").innerHTML = finalMorgage.totalPrestamo;
-    document.getElementById("ocuotamensual").innerHTML = finalMorgage.cuotaMensual;
+function outputMortgage(finalMorgage){
+    document.getElementById("omontoprestamo").innerHTML = ValueToDollar(finalMorgage.totalPrestamo);
+    document.getElementById("ocuotamensual").innerHTML = ValueToDollar(finalMorgage.cuotaMensual);
 }
 
 function resetForm(){
     document.forms["imortgage"].reset();
+    document.getElementById("omontoprestamo").innerHTML = "0";
+    document.getElementById("ocuotamensual").innerHTML = "0";
+}
+
     
+function ValueToDollar(value){
+    const dollarFormatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 });
+    return dollarFormatter.format(value);
 }
 
