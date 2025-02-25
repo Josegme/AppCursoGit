@@ -77,5 +77,56 @@ function evaluarCategoria(){
     }
 }
 
+//calculadora básica
 
-    
+function sumar(numero1,numero2){
+    let resultado = numero1 + numero2;
+    return resultado;
+}
+
+function multiplicar(x, y){
+    let z = x*y;
+    return z;
+}
+
+function division(a, b){
+    var c = a/b;
+    return c;
+}
+//vamos a crear otra función para que lea los valores que queremos operar con la calculadora
+
+function leerValores(simbolo){
+    var a = 0
+    let x = parseFloat(prompt('Por favor ingresa el primer número: '));
+    let y = parseFloat(prompt('Ingrese el segundo número: '));
+    if(simbolo != '' && (simbolo === '+' || simbolo === '*' || simbolo === '/')){
+        if(simbolo === '+'){
+            a = sumar(x,y);
+        }
+        if(simbolo === '*'){
+            a = multiplicar(x, y);
+        }
+        if(simbolo === '/'){
+            a = division(x, y);
+        }
+    }else{
+        alert('Lo siento no podemos continuar el simbolo no puede estar vacio.');
+        return;
+    }
+    tav.innerHTML = a; //tambien puedeo hacer tav.innerHTML = sumar(x,y)
+    if(a <= 0){
+        tav.className += "alertaValorNegativo";        
+    }
+}
+//copiar una estructura de funciones iguales es una mala práctica -> hay q tratar de reutilizar
+function evaluar(){
+    let iterar = true; //para que ejecute almenos una vez
+    while(iterar){
+        var respuesta =  prompt('Quieres continuar iterando? si o no');
+        if (respuesta != 'si'){
+            iterar = false;
+        }
+    }
+    alert('He salido del ciclo')
+
+}
