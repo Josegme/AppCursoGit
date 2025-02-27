@@ -2,7 +2,7 @@ let namesAndSurnames = "José Martin";
 var x = '0'; 
 let precioProducto = 0; 
 var esMayorDeEdad = true; 
-let persona = [20,'Juan Perez',true,1.68];
+let persona = [20, 'Juan Perez', true, 1.68, 'o+', 28014];
 const PROGRAM_NAME = "APLICACION DE LOGICA DE PROGRAMACION";
 //vamos a hacer que cuando el programa se ejecute cambien los valores de x
 
@@ -96,6 +96,7 @@ function division(a, b){
 //vamos a crear otra función para que lea los valores que queremos operar con la calculadora
 
 function leerValores(simbolo){
+try{
     var a = 0
     let x = parseFloat(prompt('Por favor ingresa el primer número: '));
     let y = parseFloat(prompt('Ingrese el segundo número: '));
@@ -113,11 +114,19 @@ function leerValores(simbolo){
         alert('Lo siento no podemos continuar el simbolo no puede estar vacio.');
         return;
     }
+    isNaN(a) 
+        throw ' Solo procesa números';
+
     tav.innerHTML = a; //tambien puedeo hacer tav.innerHTML = sumar(x,y)
     if(a <= 0){
         tav.className += "alertaValorNegativo";        
     }
+
+}catch(err){
+    alert('Lo siento se ha presentado un error'+err);
 }
+}
+
 //copiar una estructura de funciones iguales es una mala práctica -> hay q tratar de reutilizar
 function evaluar(){
     let iterar = true; //para que ejecute almenos una vez
@@ -128,5 +137,11 @@ function evaluar(){
         }
     }
     alert('He salido del ciclo')
+}
 
+//let persona = [20, 'Juan Perez', true, 1.68];
+function evaluarCicloFor(){
+    for(let contador = 0;  contador < persona.length; contador ++){
+        alert('El valor que tiene guardado en la posicion ' +contador+ ' es: '+ persona[contador]);
+    }
 }
