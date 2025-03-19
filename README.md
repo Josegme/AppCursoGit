@@ -19,7 +19,7 @@ Cada proyecto está diseñado para trabajar en un área específica de la lógic
 
 ## Sobre todo se baso en Formulario de Recopilación de Datos y aplicar el CRUD (APACHE y PHP myAdmin con SQL)
 
-app07_mortgage/morgage.png
+![Imagen de la app de uno de los proyectos](/app07_mortgage/morgage.png)
 
 ## Tecnologías utilizadas
 
