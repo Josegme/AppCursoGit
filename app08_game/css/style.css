@@ -1,0 +1,35 @@
+
+h1{
+    text-align: center;
+    margin-top: 80px;
+}
+h3{
+    text-align: center;    
+}
+
+.canvasdisplay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/back_img.png");
+    background-size: cover;
+    z-index: 1;
+}
+
+#arkanoidCanvaGo{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/gameover_img.png");
+    background-size: cover;
+    cursor: pointer;
+    z-index: 2;
+}
+
