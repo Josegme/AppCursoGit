@@ -1,5 +1,6 @@
-# AppCursoGit
-app creada para el curso de git y github ("solo de prueba")
--
-Creación de varias apps utilizando diferentes lenguajes y frameworks 
-(html-css-js)
+# Desarrollo Frontend - Backend / Práctico
+
+Contiene una serie de proyectos básicos interesantes para prácticar aspectos
+fundamentales y la lógica de programación en la práctica.
+
+# @Josegme_dev
